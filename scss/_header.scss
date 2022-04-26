@@ -1,0 +1,27 @@
+@import './base/mapas';
+
+header{
+    h1{ 
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: lightgray;
+    }
+    nav{
+        ul{
+            li{
+                list-style-type: none;
+                
+                a{
+                    @extend %texto;
+                    background-color:map-get($colores,bg-color); 
+                    text-decoration: none;
+                    color: map-get($colores, p-color);
+                    font-size: map-get($tamanos, tam2);
+                    padding: map-get($tamanos,tam1);
+                  
+                    
+                }
+            }
+        }
+    }
+}

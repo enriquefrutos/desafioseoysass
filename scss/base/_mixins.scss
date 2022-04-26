@@ -1,0 +1,8 @@
+@mixin imagenes($width,$padding){
+    width: $width;
+    padding: $padding;
+}
+
+img{
+    @include imagenes(200px ,10px )
+}

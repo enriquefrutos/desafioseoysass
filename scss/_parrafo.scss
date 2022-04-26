@@ -1,0 +1,10 @@
+@import './base/extends';
+@import './base/mapas';
+
+
+p{
+color: map-get($colores,p-color);
+background-color: map-get($colores,bodg-color);
+font-size: map-get($tamanos,tam3);
+@extend %texto;
+}
